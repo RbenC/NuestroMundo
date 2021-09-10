@@ -1,9 +1,9 @@
 const Galeria = () => {
     return (
-        <main class="contenido-principal contenedor">
-        <h2 class="text-center">Imágenes del Mundo</h2>
+        <main className="contenido-principal contenedor">
+        <h2 className="text-center">Imágenes del Mundo</h2>
     
-        <ul class="galeria">
+        <ul className="galeria">
           <li>
             
               <img src="https://www.eltiempo.com/files/article_multimedia/uploads/2020/10/26/5f97336671a03.jpeg" alt="imagen" />

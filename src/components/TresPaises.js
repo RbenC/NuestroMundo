@@ -1,6 +1,7 @@
 import rusia from '../assets/img/rusia.JPG';
 import canada from '../assets/img/canada.JPG';
 import eeuu from '../assets/img/USA.JPG';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -11,23 +12,23 @@ const TresPaises = () => {
 
     <div className="listado-categorias">
       <div>
-        <div className="categoria">          
-          <img src={rusia} alt="rusia"/>          
-          <p>Rusia</p>
+        <div className="categoria">                            
+          <img src={rusia} alt="rusia"/>
+          <NavLink to="/rusia">Rusia</NavLink>          
           <p>17,1 millones de km2</p>
         </div>
       </div>
       <div>
         <div className="categoria">
         <img src={canada} alt="rusia" /> 
-          <p>Canadá</p>
+        <NavLink to="/canada">Canada</NavLink>
           <p>9,9 millones de km2</p>
         </div>
       </div>
       <div>
         <div className="categoria">
         <img src={eeuu} alt="rusia" /> 
-          <p>EEUU</p>
+        <NavLink to="/usa">USA</NavLink>
           <p>9,52 millones de km2</p>
         </div>
       </div>

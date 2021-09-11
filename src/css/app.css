@@ -443,9 +443,9 @@ img {
 .banderas {
   list-style: none;
   padding: 1rem;
-  margin: 0;
+  margin: 3rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
 }
 .banderas span {

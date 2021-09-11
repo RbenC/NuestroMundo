@@ -44,18 +44,10 @@ setImages(paises);
             <ul className="banderas">
                 {
                     images.map( pais => (
-                        // <li key={pais.id}>
-                        //     <img src={pais.bandera}   />
-                        //     <p>Nombre: {pais.nombre} <br/>
-                        //     Capital: {pais.capital}<br/>
-                        //     Población: {pais.poblacion} </p>                            
-                        // </li>
-
                         <CountryGridItem 
                             key={pais.id}
                             { ...pais }
                         />
-
                     ))
                 }
             </ul>

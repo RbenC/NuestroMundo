@@ -445,7 +445,7 @@ img {
   padding: 1rem;
   margin: 3rem;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 .banderas span {
@@ -455,7 +455,7 @@ img {
 
 @media (min-width: 768px) {
   .banderas {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

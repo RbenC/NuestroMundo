@@ -1,7 +1,14 @@
+let url=''
 
     export const getCountry = async( country ) => {
-        const url = 'https://restcountries.eu/rest/v2/all' // todos los países
-        // const url = `https://restcountries.eu/rest/v2/name/${ encodeURI( country ) }`  // 1 país
+        if(country) {
+             url = `https://restcountries.eu/rest/v2/name/${ encodeURI( country ) }`  // 1 país
+        }
+        else {
+             url = 'https://restcountries.eu/rest/v2/all' // todos los países
+        }
+
+
         const resp = await fetch( url );
         const  data  = await resp.json(); 
 

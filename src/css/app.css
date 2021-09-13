@@ -463,6 +463,7 @@ img {
   height: 10rem;
   width: 20rem;
   object-fit: cover;
+  border: 1px solid black;
 }
 .banderas p {
   font-size: 1.2rem;

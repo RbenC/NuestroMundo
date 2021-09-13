@@ -1,10 +1,22 @@
+import { useFetchCountries } from '../../hooks/useFetchCountries';
+import CountryGridItem from '../CountryGridItem';
 
-const Canada = () => {
+// const country ="Russian Federation"
+const Canada = ({country}) => {    
+    const { data: images, loading } = useFetchCountries( country );
     return (
-        <div className="contenedor">
-             <h2>Descripción y mayor información para Canada</h2>
-            <p>"https://restcountries.eu/rest/v2/name/name"</p>
-            
+        <div className="contenido-principal contenedor">    
+                { loading && <p className="text-center">Loading...</p> }
+                <ul className="banderas">
+                {                    
+                    images.map( countriesList  => (
+                        <CountryGridItem
+                            key={ countriesList.id }
+                            { ...countriesList }
+                        />
+                    ))
+                } 
+                </ul>      
         </div>
     )
 }

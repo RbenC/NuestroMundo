@@ -1,12 +1,12 @@
 import { useFetchCountries } from '../hooks/useFetchCountries';
 import CountryGridItem from './CountryGridItem';
 
-const CountryGrid = ( { country }) => {
-
+const CountriesGrid = () => {
+    const country=""
     const { data: images, loading } = useFetchCountries( country );
     return (
         <div className="contenido-principal contenedor">    
-                { loading && <p>Loading...</p> }
+                { loading && <p className="text-center">Loading...</p> }
                 <ul className="banderas">
                 {                    
                     images.map( countriesList  => (
@@ -21,4 +21,4 @@ const CountryGrid = ( { country }) => {
     )
 }
 
-export default CountryGrid
+export default CountriesGrid

@@ -34,7 +34,7 @@ const NavBar = () => {
                     <NavLink to="/contacto">Contacto</NavLink>
                 </div>
                 <div className="categoria icon">
-                    <a href="#" onClick={ myFunction }><i class="fa fa-bars"></i></a>                
+                    <a href="#" onClick={ myFunction }><i className="fa fa-bars"></i></a>                
                 </div>            
             </nav>
         </div>

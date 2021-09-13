@@ -42,13 +42,13 @@ function App() {
 					</Route>
 
 					<Route path="/rusia" >
-						<Rusia />
+						<Rusia  country= {"Russian Federation"}/>
 					</Route>
 					<Route path="/canada" >
-						<Canada />
+						<Canada country={"Canada"}/>
 					</Route>
 					<Route path="/usa" >
-						<Usa />
+						<Usa country={"United States of America"} />
 					</Route>
 					<Route path="/blog" >
 						<Blog />
